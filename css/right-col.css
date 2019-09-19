@@ -1,0 +1,123 @@
+.labels{
+	display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.label-icon{
+	max-width: 100%;
+}
+.loader{
+	text-align: center;
+}
+.loader__btn{
+	text-transform: uppercase;
+	outline: none !important;
+	cursor: pointer;
+	font-size: 18px;
+	font-weight: 900;
+	border: 0;
+	background: transparent;
+}
+.card{
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid var(--border-content-color);
+	border-radius: 7px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	margin-bottom: 20px;
+}
+.card-body{
+	text-align: center;
+}
+.card__info-box{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	background: #f6ba27;
+	max-height: 100%;
+	max-width: 100%;
+	width: 170px;
+	height: 170px;
+	border-radius: 50%;
+	overflow:hidden; 
+	opacity: 0;
+	transition: all 0.4s linear;
+}
+.info-box__text{
+	display: block;
+    color: #000;
+    font-size: 15px;
+	font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.card:hover .card__info-box {
+	opacity: 0.88;
+}
+.strike{
+	font-size: 13px;	
+}
+.strike:before,
+.strike:after{
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	width: 25%;
+  	border: 1px solid #000;
+}
+
+.card-text{
+	color: #000;
+	font-size: 18px;
+	font-weight: 900;
+}
+
+.card-img{
+	max-width: 100%;
+}
+.l-cards .card:nth-child(1){
+	height: calc(43% - 20px);
+}
+.l-cards .card:nth-child(2){
+	height: calc(57% - 20px);
+}
+
+.sm-cards .card:nth-child(1){
+	height: calc(36% - 20px);
+}
+.sm-cards .card:nth-child(2){
+	height: calc(32% - 20px);
+}
+.sm-cards .card:nth-child(3){
+	height: calc(32% - 20px);
+}
+
+.es-cards{
+	height: 180px;
+}
+
+.b-cards{
+	height: 260px;
+}
+
+.sale-card{
+	background-color: #f1f1f1; 
+}
+.sale-value:after{
+	position: absolute;
+	transform: translateY(-12%);
+	content: '$88';
+	margin-left: 5px;
+	font-size: 22px;
+	font-weight: 600;
+	text-decoration: line-through;
+	color: var(--sale-alert-color);
+}
